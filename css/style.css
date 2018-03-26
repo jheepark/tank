@@ -1,0 +1,51 @@
+table {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+
+}
+
+
+table, tr, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  box-sizing: border-box;
+}
+
+
+tr, td {
+  height: 40px;
+  width: 40px;
+}
+
+tr:nth-child(odd) td:nth-child(even) {
+  background-color:  grey;
+  opacity: 0.6;
+}
+tr:nth-child(even) td:nth-child(odd) {
+  background-color:  grey;
+  opacity: 0.6;
+}
+
+
+.robot {
+  width: 40px;
+  height: 40px;
+  background-color: green;
+  box-sizing: border-box;
+  position: fixed;
+}
+
+.left {
+  border-left: 4px solid red;
+}
+.right {
+  border-right: 4px solid red;
+}
+.up {
+  border-top: 4px solid red;
+}
+.down {
+  border-bottom: 4px solid red;
+}
